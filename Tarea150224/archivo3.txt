@@ -1,0 +1,5 @@
+Javier|50|1.6
+Aldair|60|1.7
+Mosca|70|1.8
+Blender|80|1.85
+Sakamoto|90|1.9
