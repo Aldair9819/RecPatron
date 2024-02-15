@@ -1,4 +1,5 @@
 import os
+
 class lector_archivoTexto:
     def __init__(self, archivo):
         self.archivo = archivo
@@ -35,6 +36,18 @@ class lector_archivoTexto:
 def saludo():
     print("Hola mundo")
 
+def sobrescribir_archivo(self, nuevo_contenido):
+    ruta_archivo = self.archivo;
+    try:
+        with open(ruta_archivo, 'w') as archivo:
+            archivo.write(nuevo_contenido)
+        print(f'Se ha sobrescrito el contenido del archivo "{ruta_archivo}" con éxito.')
+    except Exception as e:
+        print(f'Ocurrió un error al sobrescribir el archivo: {str(e)}')
+
+
+
+"""
 def seleccion():
     print("1.- Leer archivo")
     print("2.- Añadir texto")
@@ -59,17 +72,10 @@ def opciones():
         print("Adios")
     else:
         print("Opción no válida")
-    
+"""
 #saludo()
 archivo = lector_archivoTexto("Tarea150224/archivo3.txt")
 hola = archivo.ordenar_por_nombre()
 
 for arreglo in hola:
     print(arreglo)
-"""
-archivo = lector_archivoTexto("Tarea150224/archivo.txt")
-print(archivo.leer())
-archivo.anadir("\nTexto añadido")
-archivo2 = lector_archivoTexto("Tarea150224/archivo2.txt")
-archivo2.anadir(archivo.leer())
-"""
