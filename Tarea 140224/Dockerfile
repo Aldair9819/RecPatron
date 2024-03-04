@@ -1,5 +1,5 @@
 # Use the latest Python Version as the base image
-FROM python:3.9.13-slim
+FROM python:3.9.13-slim 
 RUN apt-get update \
 && apt-get -y install libpq-dev gcc \
     && apt-get install -y ffmpeg

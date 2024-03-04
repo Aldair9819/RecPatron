@@ -1,8 +1,20 @@
 import numpy as np
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-
+from flask import Flask, request, jsonify
+from flask_cors import cross_origin
+app = Flask(__name__.split('.')[0])
+app.config['SAVE_DIR'] = 'instance/uploads'
 # Generar datos de ejemplo
+
+#Defaults
+@app.route('/')
+def home():
+    """
+    Página inicial
+    """
+    return "<h1>Bienvenidos a ApiPersonText v0.11<h1>"
+
 np.random.seed(42)
 data = np.concatenate([np.random.normal(0, 1, (100, 2)),
                        np.random.normal(5, 1, (100, 2)),
