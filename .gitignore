@@ -3,3 +3,9 @@ Tarea031724/Fotos/
 /*.csv
 /BD/
 PosVacaciones/SemanaSanta/BD_Lungs.h5
+PosVacaciones/SemanaSanta/Lungs/BD_Lungs.h5
+PosVacaciones/SemanaSanta/Lungs/modelo_cnn_80e.h5
+PosVacaciones/SemanaSanta/Sport_Balls/modelo_cnn_180Ep_310324.h5
+PosVacaciones/SemanaSanta/Sport_Balls/modelo_cnn.h5
+PosVacaciones/SemanaSanta/Sport_Balls/sportBalls_test.h5
+PosVacaciones/SemanaSanta/Sport_Balls/sportBalls_train.h5
